@@ -1,0 +1,7 @@
+{
+  "name": "train-fit-components",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
