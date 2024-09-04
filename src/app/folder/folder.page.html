@@ -15,9 +15,9 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
     
-  </div>
+    
+  
 
   <ion-accordion-group *ngIf="folder === COMPONENT_TYPES.ACTION_ACCORDION">
     <ion-accordion value="first">
@@ -39,4 +39,7 @@
       <div class="ion-padding" slot="content">Third Content</div>
     </ion-accordion>
   </ion-accordion-group>
+
+  <ion-button *ngIf="folder === COMPONENT_TYPES.ACTION_BUTTON">Default</ion-button>
+</div>
 </ion-content>

@@ -13,6 +13,7 @@ import {
   IonAccordion,
   IonItem,
   IonLabel,
+  IonButton
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { COMPONENT_TYPES } from '../app.component';
@@ -35,6 +36,7 @@ import { COMPONENT_TYPES } from '../app.component';
     IonMenuButton,
     IonTitle,
     IonContent,
+    IonButton
   ],
 })
 export class FolderPage implements OnInit {

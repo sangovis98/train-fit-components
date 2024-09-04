@@ -15,6 +15,7 @@ import {
   IonLabel,
   IonRouterOutlet,
   IonRouterLink,
+  IonButton,
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import {
@@ -56,6 +57,7 @@ import {
     IonLabel,
     IonRouterLink,
     IonRouterOutlet,
+    IonButton,
   ],
 })
 export class AppComponent {
@@ -65,7 +67,11 @@ export class AppComponent {
       url: `/folder/${COMPONENT_TYPES.ACTION_ACCORDION}`,
       icon: 'mail',
     },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
+    {
+      title: 'Button',
+      url: `/folder/${COMPONENT_TYPES.ACTION_BUTTON}`,
+      icon: 'paper-plane'
+    },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
     { title: 'Archived', url: '/folder/archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },
@@ -81,7 +87,7 @@ export enum COMPONENT_TYPES {
   ACTION_SHEET = 'action-sheet',
   ACTION_ACCORDION = 'accordion',
   ACTION_ALERT = 2,
-  ACTION_BUTTON = 3,
+  ACTION_BUTTON = 'button',
   ACTION_CARD = 4,
   ACTION_CHECKBOX = 5,
   ACTION_DATE = 6,
